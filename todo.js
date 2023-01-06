@@ -25,6 +25,7 @@ function addTodo() {
     newTag.appendChild(newContent);
     newTag.appendChild(newDel);
     todoList.appendChild(newTag);
+    todoList.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
     let count = 1;
     newCheck.addEventListener('click', () => {
